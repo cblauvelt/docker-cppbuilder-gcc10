@@ -6,7 +6,7 @@
         {
             "label": "docker build",
             "type": "shell",
-            "command": "docker build -t cblauvelt/cppbuilder-gcc10:latest .",
+            "command": "docker build -t cblauvelt/cpp-builder-gcc10:latest .",
             "problemMatcher": [],
             "group": {
                 "kind": "build",

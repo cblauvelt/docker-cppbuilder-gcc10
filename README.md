@@ -1,6 +1,6 @@
 # docker-cppbuilder-gcc10
 
-A docker container for building C++ projects with GCC10 that targets amd64. This is to build the repository at [https://hub.docker.com/repository/docker/cblauvelt/cpp-builder](https://hub.docker.com/repository/docker/cblauvelt/cpp-builder)
+A docker container for building C++ projects with GCC10 that targets amd64. This is to build the repository at [https://hub.docker.com/repository/docker/cblauvelt/cpp-builder-gcc10](https://hub.docker.com/repository/docker/cblauvelt/cpp-builder-gcc10)
 
 ## Component Versions
 
