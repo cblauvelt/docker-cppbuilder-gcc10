@@ -1,9 +1,9 @@
 FROM ubuntu:focal
 
 ENV GCC_VERSION=10 \
-    CONAN_VERSION="1.40.3" \
-    CONAN_PKG_VERSION="0.35.1" \
-    CMAKE_VERSION_FULL="3.21.2" \
+    CONAN_VERSION="1.44.1" \
+    CONAN_PKG_VERSION="0.37.0" \
+    CMAKE_VERSION_FULL="3.22.2" \
     CC=/usr/bin/gcc \
     CXX=/usr/bin/g++ \
     DEBIAN_FRONTEND=noninteractive
@@ -51,7 +51,7 @@ RUN apt-get -qq update \
     && curl -fL https://getcli.jfrog.io | sh \
     && mv jfrog /usr/local/bin/jfrog \
     && chmod +x /usr/local/bin/jfrog \
-    && pip install -q --upgrade --no-cache-dir pip==21.2.1 \
+    && pip install -q --upgrade --no-cache-dir pip==22.0.2 \
     && pip install -q --no-cache-dir conan==${CONAN_VERSION} conan-package-tools==${CONAN_PKG_VERSION} cmake==${CMAKE_VERSION_FULL}
 
 WORKDIR /root    
