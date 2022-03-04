@@ -51,17 +51,7 @@ RUN apt-get -qq update && apt-get -qq upgrade -y \
     && curl -fL https://getcli.jfrog.io | sh \
     && mv jfrog /usr/local/bin/jfrog \
     && chmod +x /usr/local/bin/jfrog \
-    && groupadd _1000 -g 1000 \
-    && groupadd _1001 -g 1001 \
-    && groupadd _2000 -g 2000 \
-    && groupadd _999 -g 999 \
-    && useradd -ms /bin/bash conan -g _1001 -G _1000,_2000,_999 \
-    && printf "conan:conan" | chpasswd \
-    && adduser conan sudo \
-    && printf "conan ALL= NOPASSWD: ALL\\n" >> /etc/sudoers \
     && pip install -q --upgrade --no-cache-dir pip==22.0.2 \
     && pip install -q --no-cache-dir conan==${CONAN_VERSION} conan-package-tools==${CONAN_PKG_VERSION} cmake==${CMAKE_VERSION_FULL}
-
-USER conan
-WORKDIR /home/conan    
-COPY default-profile .conan/profiles/default
+   
+COPY default-profile /root/.conan/profiles/default
