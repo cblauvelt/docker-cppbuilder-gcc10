@@ -6,9 +6,9 @@ A docker container for building C++ projects with GCC10 that targets amd64. This
 
 | Package | Version                                   |
 | ------- | ----------------------------------------- |
-| GCC     | gcc (Ubuntu 10.3.0-1ubuntu1~20.04) 10.3.0 |
-| CMake   | cmake version 3.22.2                      |
-| Conan   | Conan version 1.44.1                      |
+| GCC     | gcc (Ubuntu 10.5.0-1ubuntu1~22.04) 10.5.0 |
+| CMake   | cmake version 3.28.1                      |
+| Conan   | Conan version 1.62.0                      |
 
 ## How to Use
 
